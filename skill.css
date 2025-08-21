@@ -3,36 +3,35 @@ body {
   /* A deep, dark background */
   color:black; /* Light text for high contrast */
   margin: 0;
-  padding: 20px;
+  padding: 1%;
   text-align: center;
+  background-color: mistyrose;
 }
 
 /* Section title */
 .section-title {
-  font-size: clamp(2rem, 5vw, 3.5rem); /* Responsive font size */
-  margin-bottom: 50px;
+  font-size: xx-large; /* Responsive font size */
+  margin-bottom: 10px;
   color: black;
-  letter-spacing: 2px;
-  text-shadow: 0 0 15px wheat; /* Neon-like glow */
+  letter-spacing: 1px;
 }
 
 /* Layout for cards */
 .skills-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
+ display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
 }
 
 /* Card style */
 .skills-card {
-  background: #1a1a2e; /* Translucent dark card */
+  background: darkcyan; /* Translucent dark card */
   backdrop-filter: blur(10px); /* Glassmorphism effect */
   border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 30px;
-  border-radius: 20px;
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 7px;
+  ;
   text-align: left;
   transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1),
     box-shadow 0.4s ease;
@@ -40,17 +39,17 @@ body {
 
 .skills-card:hover {
   transform: translateY(-10px) rotate(1deg);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4), 0 0 30px #00f0ff; /* A bit of color on hover */
+  box-shadow: 5px 5px goldenrod, 0 0 30px #00f0ff; /* A bit of color on hover */
 }
 
 /* Card titles */
 .card-title {
   font-size: 1.5rem;
-  margin-bottom: 20px;
-  color: #00f0ff; /* Bright cyan */
+  margin-bottom: 10px;
+  color: black; /* Bright cyan */
   display: flex;
   align-items: center;
-  font-weight: 600;
+  font-weight: 80;
 }
 
 .card-title i {
@@ -72,19 +71,19 @@ body {
 }
 
 .skill-item {
-  background: #3d5afe; /* A strong, solid color */
+  background: goldenrod; /* A strong, solid color */
   color: #fff;
   padding: 8px 18px;
   border-radius: 25px;
   font-size: 0.95rem;
-  font-weight: 500;
+  font-weight: 50;
   transition: all 0.3s ease;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .skill-item:hover {
   background: #ff2c70;
-  color: #fff;
+  color: mistyrose;
   transform: translateY(-3px);
   box-shadow: 0 6px 15px rgba(255, 44, 112, 0.4);
 }
@@ -94,11 +93,11 @@ body {
   display: inline-block;
   margin-top: 50px;
   padding: 15px 35px;
-  background: #3d5afe;
+  background: goldenrod;
   color: #1a1a2e;
-  border-radius: 35px;
+  border-radius: 15px;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 70;
   font-size: 1rem;
   transition: all 0.3s ease;
   box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
