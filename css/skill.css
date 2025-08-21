@@ -1,0 +1,112 @@
+body {
+  font-family: "Poppins", sans-serif; /* A more modern font */
+  background: #1a1a2e; /* A deep, dark background */
+  color: #e4e4e4; /* Light text for high contrast */
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Section title */
+.section-title {
+  font-size: clamp(2rem, 5vw, 3.5rem); /* Responsive font size */
+  margin-bottom: 50px;
+  color: #ffd700;
+  letter-spacing: 2px;
+  text-shadow: 0 0 15px rgba(255, 215, 0, 0.4); /* Neon-like glow */
+}
+
+/* Layout for cards */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Card style */
+.skills-card {
+  background: rgba(45, 45, 75, 0.7); /* Translucent dark card */
+  backdrop-filter: blur(10px); /* Glassmorphism effect */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+  text-align: left;
+  transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1),
+    box-shadow 0.4s ease;
+}
+
+.skills-card:hover {
+  transform: translateY(-10px) rotate(1deg);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4), 0 0 30px #00f0ff; /* A bit of color on hover */
+}
+
+/* Card titles */
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #00f0ff; /* Bright cyan */
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.card-title i {
+  margin-right: 12px;
+  color: #ff2c70; /* Hot pink accent */
+  font-size: 1.6rem;
+  transition: transform 0.3s ease;
+}
+
+.skills-card:hover .card-title i {
+  transform: scale(1.1) rotate(-5deg);
+}
+
+/* Skill tags */
+.skill-item-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skill-item {
+  background: #3d5afe; /* A strong, solid color */
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 25px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.skill-item:hover {
+  background: #ff2c70;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(255, 44, 112, 0.4);
+}
+
+/* Back button */
+.back-btn {
+  display: inline-block;
+  margin-top: 50px;
+  padding: 15px 35px;
+  background: #ffd700;
+  color: #1a1a2e;
+  border-radius: 35px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
+}
+
+.back-btn:hover {
+  background: #fff;
+  color: #1a1a2e;
+  transform: scale(1.05) rotate(-2deg);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
+}
