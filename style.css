@@ -61,13 +61,13 @@ ul li a:hover{
 }
 
 .info h3{
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: 1px;
     line-height: 24px;
 }
 
 .info span{
-    color: goldenrod;
+    color: black
 }
 .info a{
     text-decoration: none;
@@ -108,7 +108,7 @@ ul li a:hover{
 }
 
 .skill{
-    padding: 120px 9%;
+    padding: 120px 20%;
     color: aqua;
     opacity: 0;
     animation: show-content 1.5s linear forwards ;
