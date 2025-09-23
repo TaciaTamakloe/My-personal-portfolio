@@ -1,120 +1,181 @@
-*{
-    margin: 0;
-    padding: 0;
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.main{
-    width: 100%;
-    background-color: rgb(255, 240, 250) ;
-    background-size: cover;
-    height: 100vh;
-    position: relative;
-    font-family: sans-serif;
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(255, 240, 250);
+  color: #222;
+  line-height: 1.6;
 }
 
-.navbar{
-    width: 86%;
-    display: flex;
-    margin: auto;
-    padding: 15px 0;
-    align-items: center;
-    justify-content: space-between ;
-    
+/* Main Wrapper */
+.main {
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  position: relative;
+  padding: 2rem 0;
 }
 
-.navbar .logo{
-    width: 60px;
-    cursor: pointer;
-    margin-top: -0.2%;
-    margin-left: -0.2%;
-    
+/* Navbar */
+.navbar {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-ul li{
-    list-style: none;
-    display: inline-block;
-    padding: 10px 16px;
+.navbar .logo {
+  width: 60px;
+  cursor: pointer;
 }
 
-ul li a{
-    font-size: 19px;
-    font-weight: bold;
-    text-decoration: none;
-    color: black;
-    margin: -3%;
-
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
 }
 
-ul li a:hover{
-    color: darkgoldenrod;
+.navbar ul li a {
+  font-size: 19px;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+  transition: 0.3s ease;
 }
 
-.info{
-    margin-left: 7%;
-    margin-top: 6%;
-    display: flex;
-    
+.navbar ul li a:hover {
+  color: darkgoldenrod;
 }
 
-.info h1{
-    font-size: 50px;
-    
+/* Info Section */
+.info {
+  width: 90%;
+  max-width: 1200px;
+  margin: 5% auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
 }
 
-.info h3{
-    font-size: 25 px;
-    letter-spacing: px;
-    line-height: 30px;
-    font-style: normal;
-    font-family: "Poppins", sans-serif;
+.info-text {
+  flex: 1;
 }
 
-.info span{
-    color: black
-}
-.info a{
-    text-decoration: none;
-    color:white;
-    background-color: black;
-    margin: 26px 0;
-    padding: 10px 18px;
-    border-radius: 10px;
-    display:inline-block;
+.info h1 {
+  font-size: 3rem;
+  color: darkgoldenrod;
+  margin-bottom: 1rem;
 }
 
-.info a:hover{
-    background: darkgoldenrod;
+.info h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: #333;
 }
 
-.images{
-    width: 600px;
-    height: 500px;
-    border: 1px soid red;
-    border-radius: 100%;
-    object-fit: cover;
-}
-.images img{
-    width: 500px;
-    height: 500px; 
-    border-radius: 90%;
+.info h3 span {
+  color: #333;
+  font-weight: 600;
 }
 
+.info a {
+  text-decoration: none;
+  color: #fff;
+  background-color: black;
+  margin-top: 1.5rem;
+  padding: 12px 25px;
+  border-radius: 8px;
+  display: inline-block;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
 
+.info a:hover {
+  background: darkgoldenrod;
+  transform: scale(1.05);
+}
 
-.about{
-    padding: 120px 9%;
-    color: darkgoldenrod;
+/* Image */
+.images {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.images img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* About Section */
+.about {
+  padding: 100px 10%;
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+  animation: fadeInUp 1.5s ease forwards;
+  opacity: 0;
+  animation-delay: 0.5s;
+}
+
+.about h2 {
+  font-size: 1rem;
+  color: darkgoldenrod;
+  margin-bottom: 1rem;
+}
+
+.about p {
+  font-size: 1rem;
+  max-width: 800px;
+  margin: auto;
+  color: #444;
+}
+
+/* Skills Section */
+.skill {
+  padding: 100px 10%;
+  background-color: burlywood;
+  color: white;
+  text-align: center;
+  animation: fadeInUp 1.5s ease forwards;
+  opacity: 0;
+  animation-delay: 1s;
+}
+
+.skill h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.skill p {
+  font-size: 1rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
     opacity: 0;
-    animation: show-content 1.5s linear forwards;
-    animation-delay: 2s;
-    background-color:white;
-}
-
-.skill{
-    padding: 120px 20%;
-    color: aqua;
-    opacity: 0;
-    animation: show-content 1.5s linear forwards ;
-    animation-delay: 2s;
-    background-color:burlywood;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
