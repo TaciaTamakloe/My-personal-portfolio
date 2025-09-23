@@ -3,22 +3,110 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My portfolio</title>
+    <title>My Portfolio - Tacia Tamakloe</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts -->
     <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
-      href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new"
     />
-    <link rel="stylesheet" href="https://github.com/TaciaTamakloe" />
-    <link
-      rel="stylesheet"
-      href="https://www.linkedin.com/in/tacia-tamakloe-439baa37b/"
-    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background: rgb(255, 240, 250);
+        margin: 0;
+        padding: 0;
+        color: #333;
+      }
+
+      /* Navbar */
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 8%;
+        background: #fff;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      }
+
+      .navbar ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        margin: 0;
+        padding: 0;
+      }
+
+      .navbar ul li a {
+        text-decoration: none;
+        font-weight: 600;
+        color: darkgoldenrod;
+        transition: color 0.3s ease;
+      }
+
+      .navbar ul li a:hover {
+        color: #b8860b;
+      }
+
+      /* Info Section */
+      .info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5% 10%;
+      }
+
+      .info-text {
+        max-width: 55%;
+      }
+
+      .info-text h3 {
+        font-size: 1.2rem;
+        line-height: 1.6;
+      }
+
+      .info-text span {
+        color: darkgoldenrod;
+        font-weight: bold;
+      }
+
+      .info-text h1 {
+        font-size: 2.5rem;
+        margin: 10px 0;
+        color: #222;
+      }
+
+      /* CV Button */
+      .info-text a {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 12px 25px;
+        background: goldenrod;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: bold;
+        transition: all 0.3s ease;
+      }
+
+      .info-text a:hover {
+        background: #daa520;
+        transform: scale(1.05);
+      }
+
+      /* Profile Image */
+      .images img {
+        max-width: 320px;
+        border-radius: 15px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+      }
+    </style>
   </head>
   <body>
     <div class="main">
+      <!-- Navbar -->
       <div class="navbar">
-        <img src="logo.png" class="logo" />
+        <img src="logo.png" class="logo" alt="My Logo" height="50" />
         <ul>
           <li><a href="#">HOME</a></li>
           <li><a href="about.html">ABOUT</a></li>
@@ -28,27 +116,29 @@
         </ul>
       </div>
 
+      <!-- Info Section -->
       <div class="info">
         <div class="info-text">
           <h3>Hi, I'm <span>Tacia</span>.</h3>
-          <h1></h1>
+          <h1>Web Designer & Developer</h1>
           <h3>
-            Junior Web designer and developer from Accra,Ghana. I create <br />
-            websites to do businesses that work best <br />
-            online.<br /> 
-            With a strong foundation in web development, 
-            this junior frontend developer focuses on frontend technologies.<br /> 
-            Competent with Python and JavaScript,
-             and experienced in developing and maintaining dynamic web applications
-             .<br />knowledgeable in frontend technologies, 
-             including Nicegui, HTML, and CSS
+            Junior Web designer and developer from Accra, Ghana. I create
+            responsive and user-friendly websites that help businesses succeed
+            online.
           </h3>
-          <a href="https://docs.google.com/document/d/1iFqTVTl1SEzlJbzjk4aCwaOMKoOOZUVQYiEnJEzSFFI/edit?usp=sharing" download>Download My CV</a>
 
+          <!-- CV Button -->
+          <a
+            href="https://docs.google.com/document/d/1iFqTVTl1SEzlJbzjk4aCwaOMKoOOZUVQYiEnJEzSFFI/view?usp=sharing"
+            target="_blank"
+            >Download My CV</a>
         </div>
 
+        <!-- Profile Image -->
         <div class="images">
-          <img src="./me.jpg" />
+          <img src="./me.jpg" alt="Tacia Tamakloe Profile Picture" />
         </div>
+      </div>
+    </div>
   </body>
 </html>
