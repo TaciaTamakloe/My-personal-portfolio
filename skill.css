@@ -19,8 +19,8 @@ body {
 /* Layout for cards */
 .skills-container {
  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  flex-direction: center;
+  gap: 9px;
   margin-bottom: 10px;
 }
 
